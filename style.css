@@ -37,6 +37,128 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   width: 100%;
-  min-height: 100vh;
-  background-color: rgb(215, 235, 252);
+  height: 100%;
+  /* min-height: 100vh; */
+  background-color: var(--GrayishBlue);
+  position: relative;
+}
+img{
+  max-width: 100%;
+}
+.page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.illustration {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.phone {
+  width: 250px;
+  height: 500px;
+  border: 12.5px solid var(--White);
+  border-radius: 20px;
+  position: relative;
+
+}
+.camera {
+  position: absolute;
+  width: 60%;
+  transform: translateX(-50%);
+  height: 25px;
+  border-radius: 50px;
+  top: -12.5px;
+  left: 50%;
+  background-color: var(--White);
+}
+.chat_header {
+  background: linear-gradient(var(--LightMagenta), var(--LightViolet));
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;  
+}
+.chat_profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.chat_owner{
+  display: flex;
+  align-items: center;
+}
+.icon-wrapper{
+  width: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* LEFT ARROW */
+.fa-solid.fa-chevron-left {
+  color: var(--LightGrayishViolet);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.chat_owner img{
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--LightGrayishViolet);
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.fa-ellipsis {
+  color: var(--LightGrayishViolet);
+}
+.chat_detail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.chat_name{
+  color: var(--LightGrayishViolet);
+  font-size: 16px;
+}
+.chat_status{
+  color: var(--PaleViolet);
+  font-size: 12px;
+}
+/* TEXT AREA */
+.text {
+  width: 440px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.text h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.text p {
+  font-weight: 500;
+  color: var(--DarkGrayishViolet);
+  line-height: 1.5;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
