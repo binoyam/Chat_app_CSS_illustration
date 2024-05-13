@@ -42,7 +42,7 @@ body {
   background-color: var(--GrayishBlue);
   position: relative;
 }
-img{
+img {
   max-width: 100%;
 }
 .page {
@@ -61,10 +61,13 @@ img{
 .phone {
   width: 250px;
   height: 500px;
-  border: 12.5px solid var(--White);
-  border-radius: 20px;
+  border: 10px solid var(--White);
+  border-radius: 40px;
+  /* padding: 15px; */
   position: relative;
+  background-color: var(--LightGrayishViolet);
 
+  overflow: hidden;
 }
 .camera {
   position: absolute;
@@ -82,20 +85,20 @@ img{
   width: 100%;
   display: flex;
   align-items: flex-end;
-  padding: 10px;  
+  padding: 10px;
+  border-radius: 0 0 6px 6px;
 }
 .chat_profile {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
 }
-.chat_owner{
+.chat_owner {
   display: flex;
   align-items: center;
 }
-.icon-wrapper{
+.icon-wrapper {
   width: 10px;
   height: 100%;
   display: flex;
@@ -109,7 +112,7 @@ img{
   height: 100%;
   object-fit: contain;
 }
-.chat_owner img{
+.chat_owner img {
   width: 30px;
   height: 30px;
   border: 2px solid var(--LightGrayishViolet);
@@ -120,19 +123,86 @@ img{
 .fa-ellipsis {
   color: var(--LightGrayishViolet);
 }
-.chat_detail{
+.chat_detail {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.chat_name{
+.chat_name {
   color: var(--LightGrayishViolet);
-  font-size: 16px;
-}
-.chat_status{
-  color: var(--PaleViolet);
   font-size: 12px;
 }
+.chat_status {
+  color: var(--PaleViolet);
+  font-size: 9px;
+}
+.messages {
+  width: 100%;
+  height: calc(100% - 65px);
+  /* background-color: var(--LightGrayishViolet); */
+  padding: 10px;
+}
+.text_recieved {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.recieved {
+  padding: 9px;
+  font-size: 9.6px;
+  font-weight: 500;
+  color: var(--ModerateViolet);
+  width: 72%;
+  background-color: hsla(289, 100%, 72%, 0.158);
+  border-radius: 14px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.dog_images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.dog_img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.text_sent {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sent {
+  color: hsl(271, 15%, 43%);
+  font-size: 9.5px;
+  width: 63%;
+  /* text-align: right; */
+  padding: 10px;
+  background-color: white;
+  border-radius: 14px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.sent_small {
+  background-color: white;
+  border-radius: 14px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: hsl(271, 15%, 43%);
+  font-size:  9.5px;
+}
+
 /* TEXT AREA */
 .text {
   width: 440px;
@@ -142,11 +212,11 @@ img{
   align-items: flex-start;
   justify-content: space-between;
 }
-.text h1 {
+.title {
   font-weight: 700;
   font-size: 30px;
 }
-.text p {
+.paragraph {
   font-weight: 500;
   color: var(--DarkGrayishViolet);
   line-height: 1.5;
