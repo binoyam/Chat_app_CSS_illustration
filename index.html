@@ -10,11 +10,6 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/49110282b8.js"
-      crossorigin="anonymous"
-    ></script>
-
     <title>Frontend Mentor | Chat app CSS illustration</title>
   </head>
   <body>
@@ -26,15 +21,25 @@
           <div class="chat_profile">
             <div class="chat_owner">
               <span class="icon-wrapper">
-                <i class="fa-solid fa-chevron-left"></i>
+                <img
+                  class="arrow_icon"
+                  src="./images/angle-left-solid.svg"
+                  alt="arrow-left"
+                />
               </span>
-              <img src="./images/avatar.jpg" alt="avatar" />
+              <img class="avatar" src="./images/avatar.jpg" alt="avatar" />
               <div class="chat_detail">
                 <p class="chat_name">Samuel Green</p>
                 <p class="chat_status">Available to Walk</p>
               </div>
             </div>
-            <i class="fa-sharp fa-solid fa-ellipsis fa-rotate-90"></i>
+            <span class="icon-wrapper">
+              <img
+                class="ellipsis_icon"
+                src="./images/ellipsis-vertical-solid.svg"
+                alt="ellipsis"
+              />
+            </span>
           </div>
         </div>
         <div class="messages">
@@ -53,28 +58,27 @@
             <p class="sent">Here are a few pictures. She’s a happy girl!</p>
             <p class="sent_small">Can you make it?</p>
           </div>
-          <div class="text_recieved">
-            <p class="recieved">
-              She looks so happy! The time we discussed works. How long shall I
-              take her out for?
-            </p>
-          </div>
+
+          <p class="recieved long">
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+
           <div class="price">
-            <div>
-              <p class="price-text">
-                <span class="circle"></span>30 minute walk
-              </p>
-              <p class="dollar">$29</p>
+            <div class="price-text">
+              <span class="circle"></span>
+              <p class="time">30 minute walk</p>
+              <span class="dollar">$29</span>
             </div>
-            <div>
-              <p class="price-text"><span class="circle"></span>1 hour walk</p>
-              <p class="dollar">$49</p>
+            <div class="price-text">
+              <span class="circle"></span>
+              <p class="time">1 hour walk</p>
+              <span class="dollar">$49</span>
             </div>
           </div>
           <div class="chat_input">
             <p>Type a message…</p>
             <i class="fa-rotate-90 fa-solid fa-chevron-left"></i>
-
           </div>
         </div>
       </div>
