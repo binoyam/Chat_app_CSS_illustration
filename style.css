@@ -39,7 +39,7 @@ body {
   width: 100%;
   height: 100%;
   /* min-height: 100vh; */
-  background-color: var(--GrayishBlue);
+  background-color: var(--White);
   position: relative;
 }
 img {
@@ -51,24 +51,29 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content:center;
-  gap:100px;
+  justify-content: center;
+  gap: 120px;
 }
 .illustration {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -125px;
+  width: 500px;
+  height: 700px;
+  background: linear-gradient(250deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-bottom-left-radius:310px;
+  border-bottom-right-radius:310px;
 }
 /* PHONE */
 .phone {
   width: 250px;
   height: 500px;
   border: 10px solid var(--White);
-  border-radius: 40px;
+  border-radius: 25px;
   /* padding: 15px; */
   position: relative;
   background-color: var(--LightGrayishViolet);
-
+  box-shadow: 1px 1px 65px 0px var(--GrayishBlue);
   overflow: hidden;
 }
 /* PHONE HEADER  */
@@ -149,7 +154,7 @@ img {
 .text_recieved {
   display: flex;
   flex-direction: column;
-  gap: 7.5px;
+  gap: 10px;
   align-items: flex-start;
   margin-bottom: 15px;
 }
@@ -172,7 +177,7 @@ img {
   width: 130px;
   height: 45px;
   font-size: 8px;
-  margin-bottom: 7.5px;
+  margin-bottom: 10px;
 }
 /* END OF RECIVED TEXTS/ LEFT SIDE */
 
@@ -183,7 +188,7 @@ img {
   align-items: center;
   justify-content: flex-end;
   gap: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .dog_img {
   width: 40px;
@@ -197,7 +202,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 7.5px;
+  gap: 8px;
   margin-bottom: 15px;
 }
 .sent {
@@ -236,7 +241,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 7.5px;
+  gap: 10px;
   margin-bottom: 15px;
 }
 
@@ -249,9 +254,9 @@ img {
   padding: 0 10px;
   padding-left: 30px;
   background: linear-gradient(250deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
-  border-radius: 10px;
+  border-radius: 8px;
   border-bottom-left-radius: 5px;
-  outline: hsl(289, 100%, 72%);
+  outline: var(--VeryLightMagenta);
   position: relative;
   color: var(--PaleViolet);
   font-size: 10px;
@@ -288,7 +293,7 @@ img {
   background-color: var(--White);
   border-radius: 30px;
 }
-.input_text{
+.input_text {
   color: var(--GrayishBlue);
   font-size: 12px;
 }
@@ -296,9 +301,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  padding: 8px;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
   border-radius: 50%;
   background-color: var(--VeryDarkDesaturatedViolet);
 }
@@ -319,12 +324,14 @@ img {
 }
 .title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 37px;
+  color: var(--VeryDarkDesaturatedViolet);
 }
 .paragraph {
   font-weight: 500;
+  font-size: 15px;
   color: var(--DarkGrayishViolet);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .attribution {
